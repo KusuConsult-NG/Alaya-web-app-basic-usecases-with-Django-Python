@@ -4,7 +4,7 @@ from client_sdk_python.eth import PlatON
 from hexbytes import HexBytes
 
 # Connecting to a node using the HTTPProvider uri and chainId
-w3 = Web3(HTTPProvider("http://47.241.98.219:6789"),chain_id = 100)
+w3 = Web3(HTTPProvider('http://47.241.91.2:6789'), chain_id=201030)
 platon = PlatON(w3)
 
 #Checking if the connection is valid
@@ -16,7 +16,7 @@ if(w3.isConnected() == true):
 block_number = platon.blockNumber
 
 # Get balance of Lat account address
-address ='lat13ew8mz2fwknwuwdc8673ykza5pcf9esr9m4w53'
+address ='atp1uug5ar8kx5trs6fp9zrev3xrxrlptrxdaq6jdf'
 balance = "Account Balance: "+str(platon.getBalance(address))
 
 # Details about the block below
